@@ -18,5 +18,5 @@
   <polygon points="204,172 216,172 220,205 208,205" fill="#ffffff" opacity="0.85"/>
   <!-- Label -->
   <rect x="65" y="265" width="270" height="32" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(199,154,47,0.4)" stroke-width="1.5"/>
-  <text x="200" y="286" text-anchor="middle" fill="#ffd875" font-family="'Inter', sans-serif" font-size="14" font-weight="700" letter-spacing="1">ADV. JOHN KNOR J</text>
+  <text x="200" y="286" text-anchor="middle" fill="#ffd875" font-family="'Inter', sans-serif" font-size="14" font-weight="700" letter-spacing="1">ADV. JOHN KNOX</text>
 </svg>

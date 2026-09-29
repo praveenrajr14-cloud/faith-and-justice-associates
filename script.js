@@ -13,15 +13,26 @@
     el.textContent = currentYear;
   });
 
-  // 2. Mobile Navigation Toggle
+  // 2. Mobile Navigation Toggle & Clean Mobile View
   const navToggle = document.getElementById('navToggle');
   const mainNav = document.getElementById('mainNav');
   if (navToggle && mainNav) {
-    navToggle.addEventListener('click', function () {
-      const expanded = this.getAttribute('aria-expanded') === 'true';
-      this.setAttribute('aria-expanded', String(!expanded));
-      mainNav.classList.toggle('mobile-hidden');
-      mainNav.classList.toggle('show');
+    navToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const isShown = mainNav.classList.toggle('show');
+      this.setAttribute('aria-expanded', String(isShown));
+      this.innerHTML = isShown ? 'Close ✕' : 'Menu ☰';
+    });
+
+    // Close menu when clicking any nav link on mobile
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function () {
+        if (window.innerWidth <= 980) {
+          mainNav.classList.remove('show');
+          navToggle.setAttribute('aria-expanded', 'false');
+          navToggle.innerHTML = 'Menu ☰';
+        }
+      });
     });
 
     // Close menu when clicking outside on mobile
@@ -29,8 +40,8 @@
       if (!navToggle.contains(e.target) && !mainNav.contains(e.target)) {
         if (mainNav.classList.contains('show')) {
           mainNav.classList.remove('show');
-          mainNav.classList.add('mobile-hidden');
           navToggle.setAttribute('aria-expanded', 'false');
+          navToggle.innerHTML = 'Menu ☰';
         }
       }
     });
@@ -97,7 +108,7 @@
     const message = msgEl ? msgEl.value.trim() : '';
 
     let text = `Hello Faith & Justice Associates and Consultants,\n\n`;
-    text += `*Consultation Request:*\n`;
+    text += `*Consultation Request for Lead Consultant Pushpa T:*\n`;
     if (name) text += `• Name: ${name}\n`;
     if (phone) text += `• Phone: ${phone}\n`;
     if (email) text += `• Email: ${email}\n`;
@@ -122,7 +133,7 @@
           <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
           </svg>
-          Thank you! Advocate Pushpa .T & team will contact you shortly at 9444977327 / email.
+          Thank you! Lead Consultant Pushpa T &amp; team will contact you shortly at 9444977327 / email.
         </div>
       `;
       e.target.reset();

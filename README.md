@@ -2,8 +2,8 @@
 
 Professional multi-page website for **Faith & Justice Associates and Consultants**, specialized in Property Legal Opinions and Legal Document Drafting.
 
-- **Lead Advocate**: Advocate Pushpa .T (Chennai Head Office)
-- **Associate Advocates**: Adv. John Knor J & Adv. Y. John Rose (Nagercoil Office)
+- **Lead Consultant**: Lead Consultant Pushpa T (Chennai Head Office)
+- **Associate Advocates**: Adv. John Knox (Chennai & Nagercoil Office) & Adv. Y. John Rose (Nagercoil Office)
 - **Direct Helpline & WhatsApp**: +91 9444977327
 - **Official Email**: pushpadhasan@gmail.com
 
@@ -29,6 +29,6 @@ Professional multi-page website for **Faith & Justice Associates and Consultants
 
 ## Pages Included:
 - `index.html` — Home page with practice pillars and hero consultation banner
-- `about.html` — Firm story, advocate profiles, and office locations
+- `about.html` — Firm story, consultant/advocate profiles, and office locations
 - `services.html` — Detailed bilingual legal opinions and deed drafting services
 - `contact.html` — Contact cards, office addresses, interactive inquiry form, and WhatsApp integration
