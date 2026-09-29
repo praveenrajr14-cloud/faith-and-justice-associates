@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b2545"/>
+      <stop offset="100%" stop-color="#07192f"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8bf56"/>
+      <stop offset="100%" stop-color="#c79a2f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="320" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="115" r="50" fill="url(#goldGrad)" opacity="0.95"/>
+  <path d="M120 250 C120 180, 280 180, 280 250 Z" fill="url(#goldGrad)" opacity="0.95"/>
+  <!-- Advocate Collar / Bands -->
+  <polygon points="190,170 210,170 206,205 194,205" fill="#ffffff"/>
+  <polygon points="184,172 196,172 192,205 180,205" fill="#ffffff" opacity="0.85"/>
+  <polygon points="204,172 216,172 220,205 208,205" fill="#ffffff" opacity="0.85"/>
+  <!-- Label -->
+  <rect x="70" y="265" width="260" height="32" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(199,154,47,0.4)" stroke-width="1.5"/>
+  <text x="200" y="286" text-anchor="middle" fill="#ffd875" font-family="'Inter', sans-serif" font-size="14" font-weight="700" letter-spacing="1">ADVOCATE PUSHPA .T</text>
+</svg>
